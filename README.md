@@ -1,9 +1,43 @@
-## Industrial Portfolio
-Hamza Mohamed, mechatronics engineering student at the Capital University.
+# Hamza Mohamed
+# mechatronics engineering student at the Capital University.
 
-# Tank Control System
-This project simulate a system where it controls the level of the liquid, where there are two sensors one is LOW and the other is HIGH, these sensors indicate which phase are we into, there are mainly three phases each with different sensor output, and these sensors are are NO switches and that means we must declare another variables for the HIGH and LOW as you are going to see in CODESYS, and that makes me think in a different way instead of NC switch connected directly onto the pump/drain.
-First we would assume we are at the first phase where there is liquid in the tank but at the LOW sensor, the employ would press the start button for the system to start obviously and that is when the pump start pumping the liquid into the tank and if the employ released the button the pump wont stop because of the latch-in system that is in the pump and in the drain as well.
-Then when the liquid reaches the HIGH level sensor the pump will stop, and after a timed delay feature to let the liquid settle the drain below will open and the liquid will go in a pipe exiting the tank.
-After some time the liquid will be below the LOW sensor and that's when the drain stops then if the employ pressed the continue button but only after 5 seconds this will make the system cycle again but before that there must be a liquid on the LOW sensor so that the pump could work, that will be done by a controlled pulse of 2 seconds when the confirm button is pressed, and that will make the pump works automatic.
-with all this in mind we have the feature to stop any of the pump and drain at any time at any phase with the stop button.
+## Tank Control System
+Platform: CODESYS
+Language: Ladder Logic 
+Hardware: Simulated
+
+## Brief Summary
+A system that controls the Pump and Drain, The cycle begins when the operator press start where the liquid is on the bottom of the tank (Low level sensor is on) and the Pump will start with the Latching mechanism, after the tank is full the Pump automatically shuts down and after 5-sec delay the Drain Turns on until the liquid is drops below the Low level sensor and after 5-sec if the continue button is pressed the Pump is on for 2-sec to refill at the Low sensor and the cycle continues Automatically.
+
+### The How
+1.Press start => Pump starts
+2.Tank is filled => Pump stops
+3.After 5-sec delay => Drain starts
+4.Tank is empty => Drains stops
+5.Press confirm => Pump works only for 2-sec
+6.Cycle repeats automatic from here
+
+### I/O List
+
+PROGRAM PLC_PRG
+VAR
+	START : BOOL;
+	STOP : BOOL;
+	HIGH : BOOL;
+	LOW : BOOL := TRUE;
+	PUMP : BOOL;
+	DRAIN : BOOL;
+	DELAY : TIME := T#5S;
+	READY : BOOL;
+	AGAIN : TIME := T#5S;
+	CYCLE : BOOL;
+	CONFIRMED : BOOL := TRUE;
+	RETURN1 : TIME := T#2S;
+END_VAR
+
+### Screenshots Of the Project's LD
+Here <image>
+
+## Skills Learned
+-The Latching Mechanism, so that the operator doesn't have to hold the Same Button
+-The Three Types of Timer Blocks, controlling every action with precise sequence 
