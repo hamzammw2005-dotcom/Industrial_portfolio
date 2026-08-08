@@ -1,2 +1,9 @@
-# Industrial_portfolio
-all of my projects that includes PLC designs, mainly on CODESYS
+#Industrial_portfolio
+all of my projects that includes PLC designs, mainly on CODESYS.
+First of all i am an undergraduate student in mechatronic engineering, and automation is my passion and i wanted to learn and practice PLC programming starting with Ladder logic and who knows if i explore more than the LD, so this page's purpose is to present my ideas and the way i think and solve problems that were stuck with me in my journey and to get a lot of feedbacks and maybe some ideas or even better solution on my projects, fell free to comment.
+#Tank control system
+This project simulate a system where it controls the level of the liquid, where there are two sensors one is LOW and the other is HIGH, these sensors indicate which phase are we into, there are mainly three phases each with different sensor output, and these sensors are are NO switches and that means we must declare another variables for the HIGH and LOW as you are going to see in CODESYS, and that makes me think in a different way instead of NC switch connected directly onto the pump/drain.
+First we would assume we are at the first phase where there is liquid in the tank but at the LOW sensor, the employ would press the start button for the system to start obviously and that is when the pump start pumping the liquid into the tank and if the employ released the button the pump wont stop because of the latch-in system that is in the pump and in the drain as well.
+Then when the liquid reaches the HIGH level sensor the pump will stop, and after a timed delay feature to let the liquid settle the drain below will open and the liquid will go in a pipe exiting the tank.
+After some time the liquid will be below the LOW sensor and that's when the drain stops then if the employ pressed the continue button but only after 5 seconds this will make the system cycle again but before that there must be a liquid on the LOW sensor so that the pump could work, that will be done by a controlled pulse of 2 seconds when the confirm button is pressed, and that will make the pump works automatic.
+with all this in mind we have the feature to stop any of the pump and drain at any time at any phase with the stop button.
