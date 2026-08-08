@@ -36,7 +36,17 @@ VAR
 END_VAR
 
 ### Screenshots Of the Project's LD
-Here <image>
+![Start Logic](Tank_Images/PumpandHighSensor.png)
+*This two rungs represent the latch-in pump and the High level sensor indication.*
+
+![Pump system](Tank_Images/PumpMechanism.png)
+*this rung as all the Pump mechanism with the 2-sec refilling and the cycle confirmation.*
+
+![Drain system](Tank_Images/Delay+Drain+LowSensor.png)
+*This part has the Drain and also the Latch mechanism, with the 5-sec delay to let the liquid rest and the Low Level sensor*
+
+![Variables](Tank_Images/Variables.png)
+*These are all the variables in the system.*
 
 ## Skills Learned
 -The Latching Mechanism, so that the operator doesn't have to hold the Same Button 
