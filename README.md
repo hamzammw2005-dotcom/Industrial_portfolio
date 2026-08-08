@@ -39,5 +39,6 @@ END_VAR
 Here <image>
 
 ## Skills Learned
--The Latching Mechanism, so that the operator doesn't have to hold the Same Button
+-The Latching Mechanism, so that the operator doesn't have to hold the Same Button 
+
 -The Three Types of Timer Blocks, controlling every action with precise sequence 
