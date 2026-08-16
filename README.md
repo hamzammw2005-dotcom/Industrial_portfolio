@@ -30,6 +30,7 @@ A system that controls the Pump and Drain, The cycle begins when the operator pr
 
 PROGRAM PLC_PRG
 VAR
+
 	START : BOOL;
 	
 	STOP : BOOL;
@@ -93,17 +94,29 @@ I/O List
 HMI_START_BUTTON : BOOL;
 
 HMI_STOP_BUTTON : BOOL;
+
 HMI_RESET_BUTTON : BOOL;
+
 IO_FULL_SENSOR : BOOL;
+
 IO_EMPTY_SENSOR : BOOL;
+
 IO_PUMP_OUTPUT : BOOL;
+
 IO_DRAIN_OUTPUT : BOOL;
+
 PLC_EMERGENCY_STOP : BOOL;
+
 CFG_FILL_DELAY : TIME := T#5S;
+
 CFG_SETTLE_DELAY : TIME:= T#5S;
+
 CFG_EMPTY_DELAY : TIME := T#5S;
-CFG_HOLD_START : TIME := T#7.5S;
+
+CFG_HOLD_START : TIME := T#7.5S
+
 CFG_WARNING_DELAY : TIME := T#2.5S;
+
 CFG_BREAK_DELAY : TIME := T#3S;
 
 ## Screenshots of the project
