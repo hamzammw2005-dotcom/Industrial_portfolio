@@ -137,7 +137,7 @@ END_VAR
 
 |--Prefix--|                      |--Meaning--|                       |--What for--|
 
-HMI                 Human-Machine Interface           Operator can change value
+|--HMI--|                 |--Human-Machine Interface--|           |--Operator can change value--|
 
 IO                        Inputs/Outputs         Any physical change from sensors to motors
  
