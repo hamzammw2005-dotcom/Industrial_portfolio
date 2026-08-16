@@ -128,3 +128,64 @@ END_VAR
 
 ## Screenshots of the project
 
+**Figure 1 : Variables List**
+
+![Variables List](Tank_V2/VARIABLES.pgn)
+*As shown in the figure there some prefixes that should be mentioned and what do they mean in the system*
+
+### Variables Prefixes
+
+Prefix                       Meaning                       What for
+
+HMI                 Human-Machine Interface           Operator can change value
+
+IO                        Inputs/Outputs         Any physical change from sensors to motors
+ 
+SIG                          Signals                 Passes signals between rings 
+
+PLC                        PLC internal               Internal states and flags
+
+CFG                       Configuration          Constant variables like timers and delays
+
+TMP                        Temporary             Temporary variables that changes constantly 
+
+TMR                          Timer               All blocks that relates with time controlling
+
+
+**Figure 2 : Input and Output of the pump system** 
+![Pump input](Tank_V2/PUMP_INPUT)
+![Pump output](Tank_V2/PUMP_OUTPUT)
+*Here the pump will turn on if the start button is pressed or if the system was on an ongoing cycle after 3-sec delay it will start the pump also, and either way the pump is latched, the continue is reset to set off the empty sensor that will be presented later on.*
+
+**Figure 3 : Full sensor**
+![Full sensor](Tank_V2/FULL_SIGNAL)
+*After the Pump is true it then fills the tank(in this project we assumed the tank takes 5-sec to fill/refill) in 5-sec delay then the full sensor is on.* 
+
+**figure 4 : Drain and Empty rungs**
+![Drain and Empty rungs](Tank_V2/DRAIN_EMPTY)
+*When the full sensor is on the drain turns on but after 5-sec to settle the liquid in the tank to transfer it onto the next stage, the drain is on and empties the tank after 5-sec then the empty sensor is off that is when the drain is off.*
+**Figure 5 : Counter and Warning rungs**
+![Counter and Warning rungs](Tank_V2/COUNTER_WARNING)
+*The first rung is responsible for the cycle counter and when the reset button is pressed the counter resets to zero, the next rung represent the warning signal where if the start button is pressed more than 7.5-sec the warning signal is on.*
+**Figure 6 : Emergency stop and Reset rungs**
+![emergency stop and Reset rungs](Tank_V2/E_STOP_RESET)
+*In the first rung after the warning signal is on for 2.5-sec the emergency stop is automatically turned on until the operator releases the start button and this is for safety measures, the next rung is for making the empty sensor on after the drain has emptied the tank, and the continue signal turns the pump on after 3-sec delay and then the continue and the empty sensor is off, and the final rung has the reset rung where it resets the pump and drain.*
+**Figure 7 : Visualization**
+![Visualization](Tank_V2/VISU)
+*As you can see that is the visualization of m the project, and below is a drive link that has the operating system with the visualization window* 
+https://drive.google.com/drive/folders/1bn4QRNYd7beiduB6x-ZnzpDbyEe5ZGJY?usp=sharing
+
+Lesson learned : automation system, adding safety features, coding prefixes, basic fundamentals of visualization with different types of buttons 
+
+
+
+
+
+
+
+
+
+
+
+
+
