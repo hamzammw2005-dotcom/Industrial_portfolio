@@ -176,7 +176,7 @@ TMR_                     |    Timer        |       All blocks that relates with 
 *In the first rung after the warning signal is on for 2.5-sec the emergency stop is automatically turned on until the operator releases the start button and this is for safety measures, the next rung is for making the empty sensor on after the drain has emptied the tank, and the continue signal turns the pump on after 3-sec delay and then the continue and the empty sensor is off, and the final rung has the reset rung where it resets the pump and drain.*
 
 **Figure 7 : Visualization**
-![Visualization](Tank_V2/)
+![Visualization](Tank_V2/VISU.png)
 *As you can see that is the visualization of m the project, and below is a drive link that has the operating system with the visualization window* 
 https://drive.google.com/drive/folders/1bn4QRNYd7beiduB6x-ZnzpDbyEe5ZGJY?usp=sharing
 
