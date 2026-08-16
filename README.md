@@ -88,7 +88,9 @@ Hardware : Simulated
 
 ## Brief Summary
 
-In this version i learned the prefix for the variables to make sure that it's readable and made it automatic with a reset feature and for safety measures an automatic emergency stop is activated if the operator pressed the start button for more than 10-sec, by making automatic meaning that the full and empty sensor is activated when the pump/drain is on for about 5-sec (can be changed it is just for simulation) and by that the operator doesn't have to activate the full and empty sensor and if there is any malfunction the operator can press the stop and reset button but it wont affect the full/empty sensors just in real life industries and the reset button resets the cycle counter.
+In this version i learned the prefix for the variables to make sure that it's readable and made it automatic with a reset feature and for safety measures an automatic emergency stop is activated if the operator pressed the start button for more than 10-sec.
+
+By making automatic meaning that the full and empty sensor is activated when the pump/drain is on for about 5-sec (can be changed it is just for simulation) and by that the operator doesn't have to activate the full and empty sensor and if there is any malfunction the operator can press the stop and reset button but it wont affect the full/empty sensors just in real life industries and the reset button resets the cycle counter.
 
 I/O List
 
@@ -135,21 +137,21 @@ END_VAR
 
 ### Variables Prefixes
 
-Prefix           :           Meaning              :         What for
+|  Prefix           |           Meaning              |         What for |
 
-HMI               :  Human-Machine Interface     :      Operator can change value
+HMI_               |  Human-Machine Interface     |      Operator can change value |
 
-IO                 :       Inputs/Outputs       :      Any physical change from sensors to motors
+IO_                 |       Inputs/Outputs       |     Any physical change from sensors to motors |
  
-SIG                 :         Signals            :     Passes signals between rings 
+SIG_                 |         Signals            |     Passes signals between rings |
 
-PLC                  :      PLC internal      :         Internal states and flags
+PLC_                  |      PLC internal      |         Internal states and flags |
 
-CFG                   :    Configuration     :     Constant variables like timers and delays
+CFG_                  |    Configuration     |     Constant variables like timers and delays |
 
-TMP                    :    Temporary       :      Temporary variables that changes constantly 
+TMP_                    |    Temporary       |      Temporary variables that changes constantly |
 
-TMR                     :    Timer        :       All blocks that relates with time controlling
+TMR_                     |    Timer        |       All blocks that relates with time controlling |
 
 
 **Figure 2 : Input and Output of the pump system** 
