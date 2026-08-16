@@ -31,17 +31,29 @@ A system that controls the Pump and Drain, The cycle begins when the operator pr
 PROGRAM PLC_PRG
 VAR
 	START : BOOL;
+	
 	STOP : BOOL;
+	
 	HIGH : BOOL;
+	
 	LOW : BOOL := TRUE;
+	
 	PUMP : BOOL;
+	
 	DRAIN : BOOL;
+	
 	DELAY : TIME := T#5S;
+	
 	READY : BOOL;
-	AGAIN : TIME := T#5S;
+	
+	AGAIN : TIME := T#5S
+	;
 	CYCLE : BOOL;
+	
 	CONFIRMED : BOOL := TRUE;
+	
 	RETURN1 : TIME := T#2S;
+	
 END_VAR
 
 ### Screenshots Of the Project's LD
