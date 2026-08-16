@@ -15,10 +15,15 @@ A system that controls the Pump and Drain, The cycle begins when the operator pr
 
 ### The Logic of the system
 1.Press start => Pump starts
+
 2.Tank is filled => Pump stops
+
 3.After 5-sec delay => Drain starts
+
 4.Tank is empty => Drains stops
+
 5.Press confirm => Pump works only for 2-sec
+
 6.Cycle repeats automatic from here
 
 ### I/O List
