@@ -135,13 +135,13 @@ END_VAR
 
 ### Variables Prefixes
 
-|--Prefix--|                      |--Meaning--|                       |--What for--|
+Prefix                      :Meaning                       :What for
 
-|--HMI--|                 |--Human-Machine Interface--|           |--Operator can change value--|
+HMI                 :Human-Machine Interface           :Operator can change value
 
-IO                        Inputs/Outputs         Any physical change from sensors to motors
+IO                        :Inputs/Outputs         :Any physical change from sensors to motors
  
-SIG                          Signals                 Passes signals between rings 
+SIG                          :Signals                 :Passes signals between rings 
 
 PLC                        PLC internal               Internal states and flags
 
