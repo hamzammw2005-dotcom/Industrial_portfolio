@@ -143,13 +143,13 @@ IO                        :Inputs/Outputs         :Any physical change from sens
  
 SIG                          :Signals                 :Passes signals between rings 
 
-PLC                        PLC internal               Internal states and flags
+PLC                        :PLC internal      :         Internal states and flags
 
-CFG                       Configuration          Constant variables like timers and delays
+CFG                       :Configuration     :     Constant variables like timers and delays
 
-TMP                        Temporary             Temporary variables that changes constantly 
+TMP                        :Temporary       :      Temporary variables that changes constantly 
 
-TMR                          Timer               All blocks that relates with time controlling
+TMR                         : Timer        :       All blocks that relates with time controlling
 
 
 **Figure 2 : Input and Output of the pump system** 
