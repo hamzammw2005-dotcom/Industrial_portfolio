@@ -135,7 +135,7 @@ END_VAR
 
 ### Variables Prefixes
 
-Prefix                       Meaning                       What for
+|--Prefix--|                      |--Meaning--|                       |--What for--|
 
 HMI                 Human-Machine Interface           Operator can change value
 
@@ -164,12 +164,15 @@ TMR                          Timer               All blocks that relates with ti
 **figure 4 : Drain and Empty rungs**
 ![Drain and Empty rungs](Tank_V2/DRAIN_EMPTY.png)
 *When the full sensor is on the drain turns on but after 5-sec to settle the liquid in the tank to transfer it onto the next stage, the drain is on and empties the tank after 5-sec then the empty sensor is off that is when the drain is off.*
+
 **Figure 5 : Counter and Warning rungs**
 ![Counter and Warning rungs](Tank_V2/COUNTER_WARNING.png)
 *The first rung is responsible for the cycle counter and when the reset button is pressed the counter resets to zero, the next rung represent the warning signal where if the start button is pressed more than 7.5-sec the warning signal is on.*
+
 **Figure 6 : Emergency stop and Reset rungs**
 ![emergency stop and Reset rungs](Tank_V2/E_STOP_RESET.png)
 *In the first rung after the warning signal is on for 2.5-sec the emergency stop is automatically turned on until the operator releases the start button and this is for safety measures, the next rung is for making the empty sensor on after the drain has emptied the tank, and the continue signal turns the pump on after 3-sec delay and then the continue and the empty sensor is off, and the final rung has the reset rung where it resets the pump and drain.*
+
 **Figure 7 : Visualization**
 ![Visualization](Tank_V2/VISU.png)
 *As you can see that is the visualization of m the project, and below is a drive link that has the operating system with the visualization window* 
