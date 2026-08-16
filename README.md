@@ -29,6 +29,7 @@ A system that controls the Pump and Drain, The cycle begins when the operator pr
 ### I/O List
 
 PROGRAM PLC_PRG
+
 VAR
 
 	START : BOOL;
@@ -47,8 +48,8 @@ VAR
 	
 	READY : BOOL;
 	
-	AGAIN : TIME := T#5S
-	;
+	AGAIN : TIME := T#5S;
+	
 	CYCLE : BOOL;
 	
 	CONFIRMED : BOOL := TRUE;
@@ -91,6 +92,10 @@ In this version i learned the prefix for the variables to make sure that it's re
 
 I/O List
 
+PROGRAM PLC_PRG 
+
+VAR
+
 HMI_START_BUTTON : BOOL;
 
 HMI_STOP_BUTTON : BOOL;
@@ -118,6 +123,9 @@ CFG_HOLD_START : TIME := T#7.5S
 CFG_WARNING_DELAY : TIME := T#2.5S;
 
 CFG_BREAK_DELAY : TIME := T#3S;
+	
+END_VAR
+
 
 ## Screenshots of the project
 
