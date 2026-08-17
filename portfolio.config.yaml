@@ -1,1 +1,59 @@
+# Portfolio Configuration
+name: "Your Full Name"
+title: "Your Professional Title (e.g., Software Developer)"
+email: "your.email@example.com"
+location: "City, Country"
+github: "https://github.com/yourusername"
+linkedin: "https://linkedin.com/in/yourusername"
 
+# About Section
+about: |
+  Write a brief introduction about yourself here.
+  What you do, your skills, and what you're passionate about.
+
+# Skills
+skills:
+  - "Programming Languages: Python, JavaScript, Java"
+  - "Web Technologies: HTML, CSS, React"
+  - "Tools: Git, Docker, VS Code"
+  - "Other: Project Management, Team Collaboration"
+
+# Experience
+experience:
+  - company: "Company Name"
+    role: "Your Role"
+    period: "Jan 2023 - Present"
+    description: |
+      Describe your responsibilities and achievements here.
+      Use bullet points or short paragraphs.
+
+  - company: "Previous Company"
+    role: "Previous Role"
+    period: "Jun 2021 - Dec 2022"
+    description: |
+      Another description of your work experience.
+
+# Projects
+projects:
+  - title: "Your Project Name"
+    description: "Brief description of what the project does."
+    technologies: ["Python", "Flask", "PostgreSQL"]
+    github: "https://github.com/yourusername/project"
+    live: "https://project-live-url.com"  # Optional
+    image: "screenshot.png"  # Optional
+
+  - title: "Another Project"
+    description: "Description of your second project."
+    technologies: ["JavaScript", "React", "Node.js"]
+    github: "https://github.com/yourusername/another-project"
+    image: "another-screenshot.jpg"
+
+# Education
+education:
+  - institution: "University Name"
+    degree: "Degree Title"
+    period: "2019 - 2023"
+    description: "Relevant coursework or achievements."
+
+# Footer
+footer: "© 2026 Your Name. Built with ❤️"
