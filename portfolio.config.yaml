@@ -1,53 +1,56 @@
 # Portfolio Configuration
 name: Hamza Mohamed Wasfy
-title: Automation Engineering
+title: Automation Engineering Student
 email: Hamzammw2005@gmail.com
-location: Cairo Egypt
+location: Cairo, Egypt
 github: https://github.com/hamzammw2005-dotcom/Industrial_portfolio
 linkedin: https://www.linkedin.com/in/hamza-mohamed-6aa0b2304/
 
 # About Section
 about: |
-  Mechatronics engineering that eager to discover more about automation and PLC programming 
-  CODESYS, MATLAB, Autocad, SolidWorks
+  Mechatronics engineering student passionate about automation and PLC programming. 
+  Skilled in CODESYS, MATLAB, AutoCAD, and SolidWorks. Eager to apply my skills 
+  in industrial automation and control systems.
 
 # Skills
-# Experience
-experience:
-  - company: "Company Name"
-    role: "Your Role"
-    period: "Jan 2023 - Present"
-    description: |
-      Describe your responsibilities and achievements here.
-      Use bullet points or short paragraphs.
+skills:
+  - "PLC Programming: CODESYS, Siemens TIA Portal"
+  - "Simulation & Design: MATLAB, AutoCAD, SolidWorks"
+  - "Programming: Python, Ladder Logic, Structured Text"
+  - "Industrial Communication: Modbus, PROFINET"
 
-  - company: "Previous Company"
-    role: "Previous Role"
-    period: "Jun 2021 - Dec 2022"
+# Experience
+# Remove this entire section if you have no work experience yet,
+# or replace with internships, projects, or relevant coursework.
+experience:
+  - company: "Internship Place (Optional)"
+    role: "Your Role"
+    period: "Month Year - Month Year"
     description: |
-      Another description of your work experience.
+      Describe what you learned or contributed.
 
 # Projects
+# Replace these with YOUR actual projects
 projects:
-  - title: "Your Project Name"
+  - title: "Your Real Project Name"
     description: "Brief description of what the project does."
-    technologies: ["Python", "Flask", "PostgreSQL"]
-    github: "https://github.com/yourusername/project"
-    live: "https://project-live-url.com"  # Optional
-    image: "screenshot.png"  # Optional
+    technologies: ["CODESYS", "PLC", "HMI"]
+    github: "https://github.com/hamzammw2005-dotcom/your-project-repo"
+    live: "https://your-live-demo.com"  # Optional
+    image: "your-screenshot.png"  # Must match filename in repo
 
-  - title: "Another Project"
+  - title: "Another Real Project"
     description: "Description of your second project."
-    technologies: ["JavaScript", "React", "Node.js"]
-    github: "https://github.com/yourusername/another-project"
+    technologies: ["MATLAB", "Simulink"]
+    github: "https://github.com/hamzammw2005-dotcom/another-project"
     image: "another-screenshot.jpg"
 
 # Education
 education:
-  - institution: "University Name"
-    degree: "Degree Title"
-    period: "2019 - 2023"
-    description: "Relevant coursework or achievements."
+  - institution: "Your University Name"
+    degree: "B.Sc. in Mechatronics Engineering"
+    period: "2021 - 2025 (Expected)"
+    description: "Relevant coursework: Control Systems, Industrial Automation, Embedded Systems."
 
 # Footer
-footer: "© 2026 Your Name. Built with ❤️"
+footer: "© 2026 Hamza Mohamed Wasfy. Built with ❤️"
