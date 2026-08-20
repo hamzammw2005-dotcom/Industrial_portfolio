@@ -11,7 +11,7 @@ Language: Ladder Logic
 Hardware: Simulated
 
 ## Brief Summary
-A system that controls the Pump and Drain, The cycle begins when the operator press start where the liquid is on the bottom of the tank (Low level sensor is on) and the Pump will start with the Latching mechanism, after the tank is full the Pump automatically shuts down and after 5-sec delay the Drain Turns on until the liquid is drops below the Low level sensor and after 5-sec if the continue button is pressed the Pump is on for 2-sec to refill at the Low sensor and the cycle continues Automatically.
+A system that controls the pump and drain, The cycle begins when the operator press start where the liquid is on the bottom of the tank (Low level sensor is on) and the pump will start with the Latching mechanism, after the tank is full the pump automatically shuts down and after 5-sec delay the drain turns on until the liquid is drops below the Low level sensor and after 5-sec if the continue button is pressed the pump is on for 2-sec to refill at the low sensor and the cycle continues automatically.
 
 ### The Logic of the system
 1.Press start => Pump starts
@@ -137,21 +137,21 @@ END_VAR
 
 ### Variables Prefixes
 
-|  Prefix           |           Meaning              |         What for |
+|  Prefix | Meaning | What for |
 
-HMI_               |  Human-Machine Interface     |      Operator can change value |
+|'HMI_'    |  Human-Machine Interface | Operator can change value |
 
-IO_                 |       Inputs/Outputs       |     Any physical change from sensors to motors |
+|'IO_' |       Inputs/Outputs |  Any physical change from sensors to motors |
  
-SIG_                 |         Signals            |     Passes signals between rings |
+|'SIG_'  |  Signals  |   Passes signals between rings |
 
-PLC_                  |      PLC internal      |         Internal states and flags |
+|'PLC_' |      PLC internal |   Internal states and flags |
 
-CFG_                  |    Configuration     |     Constant variables like timers and delays |
+|'CFG_'  |  Configuration |  Constant variables like timers and delays |
 
-TMP_                    |    Temporary       |      Temporary variables that changes constantly |
+|'TMP_'    |    Temporary  |  Temporary variables that changes constantly |
 
-TMR_                     |    Timer        |       All blocks that relates with time controlling |
+|'TMR_'  | Timer   |  All blocks that relates with time controlling |
 
 
 **Figure 2 : Input and Output of the pump system** 
@@ -180,7 +180,11 @@ TMR_                     |    Timer        |       All blocks that relates with 
 *As you can see that is the visualization of m the project, and below is a drive link that has the operating system with the visualization window* 
 https://drive.google.com/drive/folders/1bn4QRNYd7beiduB6x-ZnzpDbyEe5ZGJY?usp=sharing
 
-Lesson learned : automation system, adding safety features, coding prefixes, basic fundamentals of visualization with different types of buttons 
+Lesson Learned : 
+**Automation System Design** : I learned how to design fully automatic design system without any human interference. 
+**Safety Features** : I learned how to implement safety protocols within the system design.
+**Variables Naming convention** : I discovered how to declare variables in a professional way that will help other engineers to understand each variables purpose. 
+**HMI fundamentals** : Learned to design different types of button for specific objectives. 
 
 
 
