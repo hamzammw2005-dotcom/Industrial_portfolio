@@ -185,7 +185,7 @@ Lesson Learned :
 **Safety Features** : I learned how to implement safety protocols within the system design.
 **Variables Naming convention** : I discovered how to declare variables in a professional way that will help other engineers to understand each variables purpose. 
 **HMI fundamentals** : Learned to design different types of button for specific objectives. 
-
+**Sensors Simulation** : I used TON timers to simulate the water level sensor without the physical hardware, That demonstrates active problem solving and the ability to test and validate logic in a simulation environment.
 
 
 
