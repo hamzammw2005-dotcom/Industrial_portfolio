@@ -181,10 +181,15 @@ END_VAR
 https://drive.google.com/drive/folders/1bn4QRNYd7beiduB6x-ZnzpDbyEe5ZGJY?usp=sharing
 
 Lesson Learned : 
+
 **Automation System Design** : I learned how to design fully automatic design system without any human interference. 
+
 **Safety Features** : I learned how to implement safety protocols within the system design.
+
 **Variables Naming convention** : I discovered how to declare variables in a professional way that will help other engineers to understand each variables purpose. 
+
 **HMI fundamentals** : Learned to design different types of button for specific objectives. 
+
 **Sensors Simulation** : I used TON timers to simulate the water level sensor without the physical hardware, That demonstrates active problem solving and the ability to test and validate logic in a simulation environment.
 
 
