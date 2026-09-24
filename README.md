@@ -193,6 +193,113 @@ Lesson Learned :
 **Sensors Simulation** : I used TON timers to simulate the water level sensor without the physical hardware, That demonstrates active problem solving and the ability to test and validate logic in a simulation environment.
 
 
+Tank V3
+
+Language: LD
+
+Hardware: Simulation
+
+Platform: Codesys
+
+## Brief Summary
+
+This project helped me improve my variable-declaration more professional than the last one, And designed an emergency button stuck, also added a conveyer belt that transport the bottle to let the tank fill them up and pass it on the other end of the belt, with every 3 bottle filled the tank empties then the pump refill it, With all this global variable had to be made to make the two system communicate with one another
+
+I/O List
+
+Var
+    
+    IO_EMPTY_SENSOR           : BOOL;
+    IO_FULL_SENSOR            : BOOL;
+    IO_DRAIN_OUTPUT           : BOOL;
+	IO_PUMP_OUTPUT            : BOOL;
+	CFG_BOTTLE_FILLING_TIME   : TIME := T#3S;
+	CFG_TANK_FILLING_TIME     : TIME := T#6S;
+	CFG_BOTTLE_SETTLE_TIME    : TIME := T#2S;
+	CFG_BOTTLE_NUM_CONTANT    : REAL := 3;
+	GVL.CNV_BOTTLE_IN_POSTION : BOOL;
+	GVL.TNK_BOTTLE_FILLED     : BOOL;
+	
+END_VAR
+
+### Variables Prefixes
+
+|--Prefix--||------Meaning-----||------------What For--------------|
+
+|----IO----||--Inputs/Outputs--||----For sensors or actuators------|
+
+|----CFG---||--Configurations--||---Time/Count that are constant---|
+
+|----CNV---||------Conveyer----||---Variables from the conveyer----|
+
+|----TNK---||-------Tank-------||-----Variables from the tank------|
+
+|----GVL---||-Global variables-||-Variables from different systems-|
+
+## Projects Screenshots
+
+**Figure 1 : System Variables + Global Variables**
+
+![Vaiables](Tank_V3/Variables.png)
+![Global](tank_V3/Global.png)
+
+*These are all the variables that are used in the project and their prefixes, Designed for better understanding for every declaration made*
+
+**Figure 2 : Motor Control**
+
+![Motor Panel 1](Tank_V3/Motor_Controller.png)
+![Motor Panel 2](Tank_V3/Motor_Ph.2_and_arrival.png)
+
+*This is the full phases of the motor in which the conveyer transport the bottle to the tank, in case of an emergency the motor will stop if the button is pressed and there are two modes for the motor, the first with the bottle arriving to the tank and the second will be delivering the bottle on the other side, when the bottle has been filled the tank gives a signal to the motor to enter phase 2 so the bottle will be delivered on the other side*
+
+**Figure 3 : Bottle detection and counter**
+
+![Bottle first stage](Tank_V3/Bottle_detect_and_count.png)
+
+*After the bottle is in position the motor stops and gives a signal to the tank to fill the bottle, and it counts the bottles that arrived*
+
+**Figure 4 : Drain Filling time**
+
+![Drain input](Tank_V3/Drain_FIlling_input)
+![Drain output](Tank_V3/Drain_Filling_output)
+
+*This has the drain system and the filling time for the bottle after letting it settle*
+
+**Figure 5 : Emergency Stop Button**
+
+![E-Stop system](Tank_V3/Emergency_stuck_Safety)
+
+*This is the manual emergency stop button in case of any error in the process and if the button got stuck it will inform the operator that the system is still stopped*
+
+**Figure 6 : Bottle Count To Emptiness**
+
+![Bottle count](Tank_V3/Bottle_Count_empty_Sensor)
+
+*Here we don't have a physical sensor that could inform when the tank is empty so i designed a constant number of bottles that when reached the tank low sensor will turn on*
+
+**Figure 7 : Pump Filling Time**
+
+![Pump filling](Tank_V3/Pump_control_Filling_time)
+
+*When the low sensor is on the pump will fill the tank after a set of time and again we don't have a physical sensor to detect it so i assumed the time of the filling time so that the full sensor will turn on and stopping the pump after filled so we can continue the process*
+
+**Figure 8 : HMI**
+
+![Visuals](Tank_V3/Visualization)
+
+*This is what the operator will interface as you can see the ordinary start and stop button, Bottle counter ,Full and empty is for the tank also the pump and drain too, and below them the conveyer components, the motor whether the first or second phase, bottle arrival sensor, when it is filled and when the process has finished* 
+
+Lessoned learned :
+
+1- Global Variables : Understand and managed to designed two systems that could communicate with each other.
+
+2-Organizing : organized the networks so the operator could understand the diagram easier.
+
+3-Safety Stuck button : designed safety features for the two systems to prevent any limitation in case for any error occurred.
+
+
+
+
 
 
 
