@@ -260,32 +260,32 @@ END_VAR
 
 **Figure 4 : Drain Filling time**
 
-![Drain input](Tank_V3/Drain_FIlling_input)
-![Drain output](Tank_V3/Drain_Filling_output)
+![Drain input](Tank_V3/Drain_FIlling_input.png)
+![Drain output](Tank_V3/Drain_Filling_output.png)
 
 *This has the drain system and the filling time for the bottle after letting it settle*
 
 **Figure 5 : Emergency Stop Button**
 
-![E-Stop system](Tank_V3/Emergency_stuck_Safety)
+![E-Stop system](Tank_V3/Emergency_stuck_Safety.png)
 
 *This is the manual emergency stop button in case of any error in the process and if the button got stuck it will inform the operator that the system is still stopped*
 
 **Figure 6 : Bottle Count To Emptiness**
 
-![Bottle count](Tank_V3/Bottle_Count_empty_Sensor)
+![Bottle count](Tank_V3/Bottle_Count_empty_Sensor.png)
 
 *Here we don't have a physical sensor that could inform when the tank is empty so i designed a constant number of bottles that when reached the tank low sensor will turn on*
 
 **Figure 7 : Pump Filling Time**
 
-![Pump filling](Tank_V3/Pump_control_Filling_time)
+![Pump filling](Tank_V3/Pump_control_Filling_time.png)
 
 *When the low sensor is on the pump will fill the tank after a set of time and again we don't have a physical sensor to detect it so i assumed the time of the filling time so that the full sensor will turn on and stopping the pump after filled so we can continue the process*
 
 **Figure 8 : HMI**
 
-![Visuals](Tank_V3/Visualization)
+![Visuals](Tank_V3/Visualization.png)
 
 *This is what the operator will interface as you can see the ordinary start and stop button, Bottle counter ,Full and empty is for the tank also the pump and drain too, and below them the conveyer components, the motor whether the first or second phase, bottle arrival sensor, when it is filled and when the process has finished* 
 
