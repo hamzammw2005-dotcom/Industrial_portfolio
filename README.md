@@ -241,14 +241,14 @@ END_VAR
 **Figure 1 : System Variables + Global Variables**
 
 ![Vaiables](Tank_V3/Variables.png)
-![Global](tank_V3/Global.png)
+![Global](Tank_V3/Global.png)
 
 *These are all the variables that are used in the project and their prefixes, Designed for better understanding for every declaration made*
 
 **Figure 2 : Motor Control**
 
 ![Motor Panel 1](Tank_V3/Motor_Controller.png)
-![Motor Panel 2](Tank_V3/Motor_Ph.2_and_arrival.png)
+![Motor Panel 2](Tank_V3/Motor_Ph.2_and_Bottle_arrival.png)
 
 *This is the full phases of the motor in which the conveyer transport the bottle to the tank, in case of an emergency the motor will stop if the button is pressed and there are two modes for the motor, the first with the bottle arriving to the tank and the second will be delivering the bottle on the other side, when the bottle has been filled the tank gives a signal to the motor to enter phase 2 so the bottle will be delivered on the other side*
 
@@ -260,7 +260,7 @@ END_VAR
 
 **Figure 4 : Drain Filling time**
 
-![Drain input](Tank_V3/Drain_FIlling_input.png)
+![Drain input](Tank_V3/Drain_Filling_input.png)
 ![Drain output](Tank_V3/Drain_Filling_output.png)
 
 *This has the drain system and the filling time for the bottle after letting it settle*
